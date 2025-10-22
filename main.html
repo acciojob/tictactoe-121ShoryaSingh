@@ -148,7 +148,7 @@
       board[index] = turn === 0 ? 'x' : 'o';
       const winnerCombo = checkWinner();
       if (winnerCombo) {
-        messageDiv.textContent = `${players[turn]}, congratulations you won!`;
+        messageDiv.textContent = `${players[turn]} congratulations you won!`;
         gameActive = false;
         renderBoard(winnerCombo);
       } else if (board.every(cell => cell)) {
